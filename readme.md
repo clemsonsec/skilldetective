@@ -13,7 +13,9 @@ In this work, we design and develop the SKILLDETECTIVE, which is a scalable and 
 
 ## Major findings
 
-[![Watch the video](https://github.com/skilldetective/skilldetective/blob/master/images/kids_with_permission.png)](https://www.youtube.com/watch?v=tBxdAOCOelg)
+### Here is a demo for SkillDetective
+
+[![Watch the video](https://github.com/skilldetective/skilldetective/blob/master/images/youtube.png)](https://www.youtube.com/watch?v=tBxdAOCOelg)
 
 ### Skills in Kids categories
 
