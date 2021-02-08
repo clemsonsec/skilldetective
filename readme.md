@@ -29,7 +29,7 @@ Requesting for positive rating | 197 | If you enjoyed playing kid chef, leaving 
 Toxic content | 4 | If I had a face like yours, I’d teach my ass to talk | 
 Violation in audios/images | 11 | Happy holidays santa’s little helper here. Tell me your name to begin. (in audio) | 
 
-![Kids](https://github.com/skilldetective/skilldetective/edit/master/images/kids_with_permission.png)
+![Kids](https://github.com/skilldetective/skilldetective/blob/master/images/kids_with_permission.png)
 
 ### Skills in Health categories
 For the Health category, we detected 153 skills out of 2,163 skills and 13 actions out of 207 actions with health-related data collection.
@@ -55,8 +55,8 @@ Having an ncomplete privacy policy | 587 | 188 |26|
 Having a deceptive privacy policy |148|35|1|
 Should ask for permission |-|340|12|
 
-![nopolicy](https://github.com/skilldetective/skilldetective/edit/master/images/permission_no_policy2.png)
-![deceptivepolicy](https://github.com/skilldetective/skilldetective/edit/master/images/deceptive_policy.png)
+![nopolicy](https://github.com/skilldetective/skilldetective/blob/master/images/permission_no_policy2.png)
+![deceptivepolicy](https://github.com/skilldetective/skilldetective/blob/master/images/deceptive_policy.png)
 
 
 ###  Explicitly requests that users leave a positive rating of the skill
@@ -74,11 +74,11 @@ We confirmed this policy violation in 3,157 skills (there were some skills reque
 
 We have detected 19 skills with policy violations hidden in the audio or image files. Eleven of the skills in the Kids category. Six non-kid skills contain data collection, while 3 of them lack a privacy policy and 3 more have incomplete privacy policies. The skill "Shape Game" asks "what is your name" in the audio file output, but does not provide a privacy policy. Another 2 skills contain toxic content in the media outputs.
 
-![Summary](https://github.com/skilldetective/skilldetective/edit/master/images/media_violation.png)
+![Summary](https://github.com/skilldetective/skilldetective/blob/master/images/media_violation.png)
 
 ## Policies
  The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).
-![ The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).](https://github.com/skilldetective/skilldetective/edit/master/images/policies.png)
+![ The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).](https://github.com/skilldetective/skilldetective/blob/master/images/policies.png)
 
 Policies that are considered in SKILLDETECTIVE, butwe didn’t find any skill violating them in our testing.
 
@@ -86,4 +86,4 @@ Provide life-saving assistance, Cure all diseases, Black market sale, Prescripti
 
 
 ## Summary of policy violations identified bySKILLDETECTIVE
-![Summary](https://github.com/skilldetective/skilldetective/edit/master/images/results.png)
+![Summary](https://github.com/skilldetective/skilldetective/blob/master/images/results.png)
