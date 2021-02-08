@@ -67,7 +67,9 @@ We confirmed this policy violation in 3,157 skills (there were some skills reque
 ###  Policy violations of content safety in skill outputs
 
 71 Alexa skills contain toxic content
+
 3 skills predict gender
+
 1 skill promotes gambling
 
 ### Policy violations in audio/images
@@ -85,5 +87,5 @@ Policies that are considered in SKILLDETECTIVE, butwe didn’t find any skill vi
 Provide life-saving assistance, Cure all diseases, Black market sale, Prescription drugs, Offers a separate skills store, Recommend skills, Offer compensation for using skills, Solicit donations, Extreme gore, Decapitations, Unsettling content, Excessive violence, Organized crime,  Terrorism, Illegal activities, Forced marriages, Purchasable husbands, Purchasable wives, Promote hate speech, Incite racial hatred, Incite gender hatred, Nazi symbols, Promote Ku Klux Klan, Contact emergency responder, Contact 911, Illegal downloading, Pirated software, Join illegal organization, Illegal lifestyle, Prostitution, Create dangerous materials, Build bomb, Build meth lab, Build silencer, Promote terrorism, Praise terrorism, Recruit members for terrorist, Gambling, Excessive alcohol, Underage alcohol|
 
 
-## Summary of policy violations identified bySKILLDETECTIVE
+## Summary of policy violations identified by SKILLDETECTIVE
 ![Summary](https://github.com/skilldetective/skilldetective/blob/master/images/results.png)
