@@ -2,16 +2,13 @@
 
 ## Introduction
 
-In this work,we design and develop the SKILLDETECTIVE, which is a scalable and robust testing tool to identify policy-violating skills. SKILLDETECTIVE significantly extends skill testing capabilities in a broader context. We make the following contributions:
+In this work, we design and develop the SKILLDETECTIVE, which is a scalable and robust testing tool to identify policy-violating skills. SKILLDETECTIVE significantly extends skill testing capabilities in a broader context. We make the following contributions:
 
 * New tool development: We design and develop a dynamic testing tool, named S KILL D ETECTIVE , with the capabilities to automatically test skill behaviors and report on any potential policy violations against various policy requirements. 
 
 * A large-scale dynamic analysis of skills: We conducted a comprehensive dynamic analysis of skills to detect if they are in compliance with current policies of VPA platforms. After over a year of development and testing, we have tested 54,055 Amazon Alexa skills and 5,583 Google Assistant actions, and gathered 518,385 textual outputs, 10,370 audio files and 311,000 images in total from skill interactions. Such a wide-range and large-scale policy violation detection of skills has not previously been reported.
 
 * Findings: We identified 5,994 skills and 184 actions violating at least one policy requirement. 830 skills and 22 actions violate more than one policy. In the Kids category, we identified 282 policy-violating skills. 82% of skills and 67% of actions in the Health category violate at least one policy. 1,149 skills and 32 actions violate policies related to personal data collection. 
-
-We have reported the identified policy-violating skills to Amazon Alexa Skills Team and Google Actions Counter-Abuse Team, and received their acknowledgments. Our findings in this paper help VPA vendors improve their skills' policy compliance, and we believe this work will have a great potential to positively impact the VPA ecosystem.
-
 
 
 ## Major findings
