@@ -13,6 +13,8 @@ In this work, we design and develop the SKILLDETECTIVE, which is a scalable and 
 
 ## Major findings
 
+[![Watch the video](https://github.com/skilldetective/skilldetective/blob/master/images/kids_with_permission.png)](https://www.youtube.com/watch?v=tBxdAOCOelg)
+
 ### Skills in Kids categories
 
 We tested all 3,617 Amazon skills and 108 Google actions in the Kids category (as of Sep. 2020). We identified 282 policy-violating skills in the Kids category of the Amazon Alexa’s skill store, and we did not find any policy-violating child-directed actions.
