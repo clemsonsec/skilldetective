@@ -50,7 +50,7 @@ Lacking a disclaimer | 1696 (78%) | 148 (65%) |
 
 For the general (non-Kids and non-Health) categories, we identified 597 skills and 35 actions collecting personal data  without using permission APIs (they collect user data through the conversation interface). There are also 1,369 skills collecting personal data using permission APIs in the Amazon Alexa platform. Among all these skills with data collection, 1,149 skills and 32 actions violate at last one policy, such as lacking a privacy policy, having an incomplete or deceptive privacy policy.
 
-Policy Violation | Skills Collect Data ThroughPermission APIs | Skills Collect Data Without Using Permission APIs | Action |
+Policy Violation | Skills Collect Data Through Permission APIs | Skills Collect Data Without Using Permission APIs | Action |
 :---: | :---: | :---:| :---:| 
 Collecting data | 1369 | 597 | 35|
 Lacking a privacy policy| 1 | 266 | 0 |
