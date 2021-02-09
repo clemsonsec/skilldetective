@@ -13,9 +13,11 @@ In this work, we design and develop the SKILLDETECTIVE, which is a scalable and 
 
 ## Major findings
 
-### Here is a demo for SkillDetective
+### Here is a demo for the automated skill testing. 
 
 [![Watch the video](https://github.com/skilldetective/skilldetective/blob/master/images/youtube.png)](https://www.youtube.com/watch?v=tBxdAOCOelg)
+
+### The detailed list of the identifiedpolicy-violating skills can be found in ./policy_detector/
 
 ### Skills in Kids categories
 
