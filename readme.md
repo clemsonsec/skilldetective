@@ -4,7 +4,7 @@
 
 In this work, we design and develop the SKILLDETECTIVE, which is a scalable and robust testing tool to identify policy-violating skills. SKILLDETECTIVE significantly extends skill testing capabilities in a broader context. We make the following contributions:
 
-* New tool development: We design and develop a dynamic testing tool, named S KILL D ETECTIVE , with the capabilities to automatically test skill behaviors and report on any potential policy violations against various policy requirements. 
+* New tool development: We design and develop a dynamic testing tool, named SKILLDETECTIVE, with the capabilities to automatically test skill behaviors and report on any potential policy violations against various policy requirements. 
 
 * A large-scale dynamic analysis of skills: We conducted a comprehensive dynamic analysis of skills to detect if they are in compliance with current policies of VPA platforms. After over a year of development and testing, we have tested 54,055 Amazon Alexa skills and 5,583 Google Assistant actions, and gathered 518,385 textual outputs, 10,370 audio files and 311,000 images in total from skill interactions. Such a wide-range and large-scale policy violation detection of skills has not previously been reported.
 
