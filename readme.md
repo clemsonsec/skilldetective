@@ -85,7 +85,7 @@ We have detected 19 skills with policy violations hidden in the audio or image f
  The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).
 ![ The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).](https://github.com/skilldetective/skilldetective/blob/master/images/policies.png)
 
-## Policies that are considered in SKILLDETECTIVE, butwe didn’t find any skill violating them in our testing:
+## Policies that are considered in SKILLDETECTIVE, but we didn’t find any skill violating them in our testing:
 
 Provide life-saving assistance, Cure all diseases, Black market sale, Prescription drugs, Offers a separate skills store, Recommend skills, Offer compensation for using skills, Solicit donations, Extreme gore, Decapitations, Unsettling content, Excessive violence, Organized crime,  Terrorism, Illegal activities, Forced marriages, Purchasable husbands, Purchasable wives, Promote hate speech, Incite racial hatred, Incite gender hatred, Nazi symbols, Promote Ku Klux Klan, Contact emergency responder, Contact 911, Illegal downloading, Pirated software, Join illegal organization, Illegal lifestyle, Prostitution, Create dangerous materials, Build bomb, Build meth lab, Build silencer, Promote terrorism, Praise terrorism, Recruit members for terrorist, Gambling, Excessive alcohol, Underage alcohol
 
