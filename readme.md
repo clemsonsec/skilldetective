@@ -17,7 +17,7 @@ In this work, we design and develop the SKILLDETECTIVE, which is a scalable and 
 
 [![Watch the video](https://github.com/skilldetective/skilldetective/blob/master/images/youtube.png)](https://www.youtube.com/watch?v=tBxdAOCOelg)
 
-### The detailed list of the identifiedpolicy-violating skills can be found in ./policy_detector/
+### The detailed list of the identifiedpolicy-violating skills can be found in ./[policy_detector](https://github.com/skilldetective/skilldetective/tree/master/policy_detector)
 
 ### Skills in Kids categories
 
