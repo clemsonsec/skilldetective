@@ -82,8 +82,8 @@ We have detected 19 skills with policy violations hidden in the audio or image f
 ![Summary](https://github.com/skilldetective/skilldetective/blob/master/images/media_violation.png)
 
 ## Policies
- The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).
-![ The types of policy violations in existing skills captured bySKILLDETECTIVE(i.e., there exists at least one skill violatingone of these 13 policies).](https://github.com/skilldetective/skilldetective/blob/master/images/policies.png)
+ The types of policy violations in existing skills captured by SKILLDETECTIVE (i.e., there exists at least one skill violating one of these 13 policies).
+![ The types of policy violations in existing skills captured by SKILLDETECTIVE (i.e., there exists at least one skill violating one of these 13 policies).](https://github.com/skilldetective/skilldetective/blob/master/images/policies.png)
 
 ## Policies that are considered in SKILLDETECTIVE, but we didn’t find any skill violating them in our testing:
 
