@@ -30,7 +30,7 @@ Directing users to outside of Alexa | 21 | Please support us by visiting www.one
 Explicit mature content | 12 | My bestie contains mature content that may not be suitable for all ages. | 
 Requesting for positive rating | 177 | If you enjoyed playing kid chef, leaving us a five star review will help us add more content. | 
 Toxic content | 4 | If I had a face like yours, I’d teach my ass to talk | 
-Violation in audios/images | 11 | Happy holidays santa’s little helper here. Tell me your name to begin. (in audio) | 
+Violation in audios/images | 4 | Happy holidays santa’s little helper here. Tell me your name to begin. (in audio) | 
 
 ![Kids](https://github.com/skilldetective/skilldetective/blob/master/images/kids_with_permission.png)
 
