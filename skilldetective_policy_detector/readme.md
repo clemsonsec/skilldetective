@@ -1,6 +1,6 @@
 # SkillDetective Policy Detector
 
-The policy detector works with python3.
+The policy detector works with python3. 
 
 1 Install the “spacy” library with:
 
