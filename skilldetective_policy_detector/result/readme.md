@@ -1,1 +1,1 @@
-Here are results of policy detector.
+This folder includes results of policy detector.
