@@ -27,6 +27,8 @@ python policy_detector.py
 
 5 The results are in folder “result”. 
 
-Summary of policy-violating skills and actions are in files ”all_problematic_skills_result.csv” and “all_problematic_actions_result.csv”. 
+  Summary of policy-violating skills and actions are in files ”all_problematic_skills_result.csv” and “all_problematic_actions_result.csv”. 
 
-More details about each category are shown in “result/details” folder.
+  More details about each category are shown in “result/details” folder.
+
+6 Policy detector results include both static analysis result (from skills/actions' description, privacy policy, permission) and dynamic analysis result (from skills/actions' outputs).
