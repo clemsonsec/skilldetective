@@ -22,7 +22,7 @@ Put it under "skilldetective_policy_detector" and name it as "data".
 
 4 Run the code:
 ```
-$ python policy_detector.py
+python policy_detector.py
 ```
 
 5 The results are in folder “result”. 
