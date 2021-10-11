@@ -1,1 +1,0 @@
-Here are results of policy detector.
