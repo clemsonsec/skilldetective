@@ -1,4 +1,3 @@
-package QandA;
 
 import edu.cmu.lti.jawjaw.pobj.POS;
 import edu.cmu.lti.lexical_db.ILexicalDatabase;
