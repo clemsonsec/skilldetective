@@ -1,5 +1,3 @@
-package QandA;
-
 
 import java.util.ArrayList;
 import java.util.HashSet;
