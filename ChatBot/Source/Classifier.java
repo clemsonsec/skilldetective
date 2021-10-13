@@ -5,7 +5,6 @@
  * Path to input folder must be set below!!!!!
  */
 
-package QandA;
 
 import edu.stanford.nlp.simple.*;
 import java.io.File;
