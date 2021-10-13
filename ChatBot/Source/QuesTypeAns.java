@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package QandA;
 
 import edu.stanford.nlp.simple.Sentence;
 import edu.stanford.nlp.trees.Tree;
