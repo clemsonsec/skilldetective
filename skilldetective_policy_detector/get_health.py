@@ -4,7 +4,7 @@ import os
 import re
 import string
 import spacy
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_lg')
 
 def get_dataset_skill_health(health = True):
 	skillname = {}
@@ -135,7 +135,7 @@ def get_health_data_collection(output_health, skilldescription, healthornot, pla
 
 
 def write_result_output(skills, name, skillid, output, platform):
-	with open('result/'  + platform +  '_2_Health_data_collection.csv', 'w', newline='') as csvfile:
+	with open('result/'  + platform +  '_2_Health_data_collection.csv', 'a', newline='') as csvfile:
 		fieldnames = ['Order', 'Category', 'Violated_policy', 'Skill_id', 'Skill_name', 'Skill_output']
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 #		writer.writeheader()
@@ -152,6 +152,15 @@ def write_result_description(skills, skillname, output, platform):
 			writer.writerow({'Order': '2', 'Category': 'Health', 'Violated_policy': skill[1],  'Skill_id': skill[0], 'Skill_name': skillname[skill[0]], 'Skill_output': skill[2]})
 
 
+def write_result_permission(skills, skillname):
+	with open('result/'  + 'skill' +  '_2_Health_data_collection.csv', 'a', newline='') as csvfile:
+		fieldnames = ['Order', 'Category', 'Violated_policy', 'Skill_id', 'Skill_name', 'Skill_output']
+		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+#		writer.writeheader()
+		for skill in skills:
+			writer.writerow({'Order': '2', 'Category': 'Health', 'Violated_policy': 'collect data with permission',  'Skill_id': skill, 'Skill_name': skillname[skill], 'Skill_output': ''})
+
+
 def get_data_collection( platform = 'skill', health = True):
 	if platform == 'skill':
 		output, name, skillid = violation.get_output_skill()
@@ -164,7 +173,10 @@ def get_data_collection( platform = 'skill', health = True):
 	skills_in_output, skills_in_description = get_health_data_collection(output_health, skilldescription, health, platform)
 	write_result_output(set(skills_in_output), name, skillid, output_health, platform)
 	write_result_description(set(skills_in_description), skillname, output_health, platform)
-
+	if platform == 'skill' and health == True:
+		permission = set([i.split('\t')[0] for i in open('data/permission_label.txt').read().split('\n')])
+		health_skill_id = set([skillid[i] for i in output_health])
+		write_result_permission(permission & health_skill_id, skillname)
 
 def get_disclamier(skilldescription, skillname, platform = 'skill'):
 	disclamier = 'This tool does not provide medical advice, and is for informational and educational purposes only, and is not a substitute for professional medical advice.'

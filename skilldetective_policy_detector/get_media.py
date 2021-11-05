@@ -5,7 +5,7 @@ import re
 import string
 import violation
 import spacy
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 
 
 def get_output_media():

@@ -3,7 +3,7 @@ import os
 import pickle
 from tqdm import tqdm
 import spacy
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_lg')
 
 def get_data_collection():
 	permission = {'Device Address':['address', 'location', 'geographic', 'gps', 'geolocation', 'position'], 'Device Country and Postal Code':['zipcode', 'zip code', 'address', 'location', 'postal code', 'geographic', 'gps','geolocation', 'country code', 'position', 'postalcode'], 'Email Address':['email', 'e-mail', 'mail'], 'First Name':['name'], 'Full Name':['name'], 'Location Services':['address', 'location' ,'geographic', 'gps','geolocation', 'position'], 'Mobile Number':['phone number', 'telephone', 'phone']}

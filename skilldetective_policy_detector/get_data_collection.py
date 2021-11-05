@@ -5,7 +5,7 @@ import re
 import pickle
 from tqdm import tqdm
 import spacy
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_lg')
 
 
 def get_policy(skill_id):
@@ -45,6 +45,7 @@ def get_incomplete_policy(data_collection, skillid, skillpolicy):
 	incomplete_policy = []
 	with tqdm(total = len(data_collection)) as pbar:
 		for skill in data_collection:
+			pbar.update(1)
 			if skill[1] in similar_data:
 				data = similar_data[skill[1]]
 			else:
@@ -88,7 +89,6 @@ def get_incomplete_policy(data_collection, skillid, skillpolicy):
 					have_data = 1
 			if have_data != 1:
 				incomplete_policy.append(skill)
-			pbar.update(1)
 	return no_privacy_word, incomplete_policy, getpolicyfailed
 
 
@@ -97,8 +97,8 @@ def get_inconsistent_policy(data_collection, skillid, skillpolicy):
 	remove_keywords = ['child', 'age','under','13','18','unless','other than','except','financial information','only','categories']
 	for skill in data_collection:
 		try:
-			data_practices = pickle.load(open('/data/data_practice/' + skillid[skill[0]]+'.pickle', 'rb'), encoding='utf-8')
-			negative_data_practices = pickle.load(open('/data/data_practice//' + skillid[skill[0]]+'.pickle', 'rb'), encoding='utf-8')		
+			data_practices = pickle.load(open('data/data_practice/' + skillid[skill[0]]+'.pickle', 'rb'), encoding='utf-8')
+			negative_data_practices = pickle.load(open('data/negative_data_practice/' + skillid[skill[0]]+'.pickle', 'rb'), encoding='utf-8')		
 			not_collected_data = []
 			for negative in negative_data_practices['negations']:
 				for data_practice in data_practices:
@@ -135,7 +135,7 @@ def get_des_inconsistent(data_collection, skilldescription, skillid):
 
 
 def get_wrong_configure_google(data_collection, output):
-	permission = ['name','address','location']
+	permission = ['collect data name','collect data address','collect data location']
 	skills = []
 	for skill in data_collection:
 		if skill[1] in permission:
@@ -150,6 +150,8 @@ def write_result(violation_type, skills, output, skillid, name, platform):
 		writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
 #		writer.writeheader()
 		for skill in skills:
+			if 'google' in output[skill[0]].lower() or 'share' in output[skill[0]].lower():
+				continue
 			writer.writerow({ 'Order': '4', 'Category': 'Collect_data_without_permission', 'Violated_policy': violation_type + ' ' + skill[1], 'Skill_id': skillid[skill[0]], 'Skill_name': name[skill[0]].replace('Talk to ', ''), 'Skill_output': output[skill[0]].replace('\n','')})
 
 
