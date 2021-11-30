@@ -202,7 +202,7 @@ public class S5 {
                         }
                     }
 
-                    if (!isNull) {
+                    if (!isNull && maps.size() > 0) {
                         answer = maps.get(0).getNodes().get(index);
                         System.out.println("S: " + answer);
                         output.get(output.size() - 6).add(n);
