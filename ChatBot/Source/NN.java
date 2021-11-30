@@ -66,7 +66,7 @@ public class NN {
 
         //set learning rate
         double lR = .85;
-        System.out.println("Learning rate: " + lr);
+        System.out.println("Learning rate: " + lR);
         //set # of nodes in each layer
         int nodes = 5;
         System.out.println("# of nodes in hidden layer: " + nodes);
