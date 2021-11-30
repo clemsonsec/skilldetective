@@ -34,20 +34,22 @@ import org.apache.commons.io.FileUtils;
 public class S5 {
 
     static int file = 1;
+    //config data
+    static String UserName, PW, URL;
 
     public static void main(String[] args) throws InterruptedException, IOException {
-
-        //fix this..........................
+        //gets data from config file
+        getConfig();
         Classifier c = new Classifier();
 
         //log in------------------------------------------------------------------
         WebDriver driver = new FirefoxDriver();
         //URL to testing console
-        String baseUrl = "Amazon URL";
+        String baseUrl = URL;
         driver.get(baseUrl);
         //Testing console sign in credentials
-        driver.findElement(By.id("ap_email")).sendKeys("Amazon Email");
-        driver.findElement(By.id("ap_password")).sendKeys("Amazon Password");
+        driver.findElement(By.id("ap_email")).sendKeys(UserName);
+        driver.findElement(By.id("ap_password")).sendKeys(PW);
         driver.findElement(By.id("signInSubmit")).click();
 
         //wait for testing console to load
@@ -560,5 +562,27 @@ public class S5 {
             workbook.write(outputStream);
         }
         System.out.println("file was output");
+    }
+    public static void getConfig() {
+        try {
+            File myObj = new File("src/config.txt");
+            Scanner myReader = new Scanner(myObj);
+            int n = 1;
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                if (n == 1) {
+                    UserName = data;
+                } else if (n == 2) {
+                    PW = data;
+                } else if (n == 3) {
+                    URL = data;
+                }
+                n++;
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
     }
 }
