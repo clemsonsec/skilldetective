@@ -35,12 +35,12 @@ public class S5 {
 
     static int file = 1;
     //config data
-    static String UserName, PW, URL;
+    static String UserName, PW, URL, Direct;
 
     public static void main(String[] args) throws InterruptedException, IOException {
         //gets data from config file
         getConfig();
-        Classifier c = new Classifier();
+        Classifier c = new Classifier(Direct);
 
         //log in------------------------------------------------------------------
         WebDriver driver = new FirefoxDriver();
@@ -266,7 +266,7 @@ public class S5 {
                     FileUtils.copyURLToFile(
                             new URL(link),
                             //the following path must be set to the media folder
-                            new File("//Pathway to folder/Data/Media/" + name + "-" + id + "-" + file++ + "." + end));
+                            new File(Direct + "Data/Media/" + name + "-" + id + "-" + file++ + "." + end));
 
                 } catch (java.io.FileNotFoundException e) {
                     System.out.println("Error file type. All is well!");
@@ -354,11 +354,11 @@ public class S5 {
     public static String ans(String q) throws IOException {
         ArrayList<ArrayList<String>> data = new ArrayList<>(); //stores inputs
 
-        input(data, "Data/Data/TrainNNFinal");
+        input(data, "Data/TrainNNFinal");
 
         ArrayList<ArrayList<String>> sW = new ArrayList<>(); //stores inputs
 
-        input(sW, "Data/Data/stopwords");
+        input(sW, "Data/stopwords");
 
         //question
         ArrayList<String> Q = new ArrayList<>(data.get(0));
@@ -471,7 +471,7 @@ public class S5 {
 
         ArrayList<ArrayList<XSSFCell>> cells = new ArrayList<>();
 
-        File myFile = new File("//Pathway to foldder/Data/" + name + ".xlsx");
+        File myFile = new File(Direct + "/Data/" + name + ".xlsx");
         FileInputStream fis = null;
 
         fis = new FileInputStream(myFile);
@@ -558,7 +558,7 @@ public class S5 {
 
         }
 
-        try (FileOutputStream outputStream = new FileOutputStream("//Pathway to folder/Data/output.xlsx")) {
+        try (FileOutputStream outputStream = new FileOutputStream(Direct + "/Data/output.xlsx")) {
             workbook.write(outputStream);
         }
         System.out.println("file was output");
@@ -576,7 +576,9 @@ public class S5 {
                     PW = data;
                 } else if (n == 3) {
                     URL = data;
-                }
+                } else if(n == 4){
+                    Direct = data;
+                }   
                 n++;
             }
             myReader.close();
