@@ -19,8 +19,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Classifier {
 
-    public Classifier() {
+    static String Direct;
+    public Classifier(String Direct) {
 
+        Classifier.Direct = Direct;
         System.out.println("Classifier created");
     }
 
@@ -118,7 +120,7 @@ public class Classifier {
         ArrayList<ArrayList<XSSFCell>> cells = new ArrayList<>();
 
         //This pathway must be set!!!!
-        File myFile = new File("//Path to folder/Data/Data/QClassified.xlsx");
+        File myFile = new File(Direct + "Data/Data/QClassified.xlsx");
         
         FileInputStream fis = null;
 
