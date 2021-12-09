@@ -40,6 +40,8 @@ public class S5 {
     public static void main(String[] args) throws InterruptedException, IOException {
         //gets data from config file
         getConfig();
+        System.setProperty("webdriver.gecko.driver",
+                Direct + "/Data/geckodriver");
         Classifier c = new Classifier(Direct);
 
         //log in------------------------------------------------------------------
