@@ -172,10 +172,6 @@ public class Sim {
             ArrayList<String> t = new ArrayList<>();
             split(s.get(i).toLowerCase(), t);
             hs.add(t.get(t.size() / 2).toLowerCase());
-            //hs.add(t.get(t.size() - 1).toLowerCase());
-            /*for (int j = 0; j < t.size(); j++) {
-                hs.add(t.get(j).toLowerCase());
-            }*/
         }
 
         BOW = new ArrayList<>(hs);
@@ -200,7 +196,7 @@ public class Sim {
             }
         }
 
-        if (!temp.isBlank()) {
+        if (!temp.isEmpty()) {
             //adds the last word in the statement
             a.add(temp.replaceAll("\\p{Punct}", "").toLowerCase());
         }
